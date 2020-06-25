@@ -96,6 +96,12 @@ class Laptop:
         """ `self` is a special variable arguments of every methods. It holds the current object
         Every method should start with `self`, unless you want a static method"""
         print(self.color)
+        
+apple = Laptop("Apple", "silver", 1000, 123455667)
+xiao_mi = Laptop("Xiao Mi", "silver", 1000, 33434325325)
+
+apple.tell_me_your_color()
+xiao_mi.tell_me_your_color()
 ```
 
 ### Exercise
