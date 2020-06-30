@@ -191,5 +191,36 @@ A linked list consists a list of nodes where they are linked to each other:
 
 ![Linked-list](images/linked-list.png)
 
+Linked-list implementation in Python
+```Python
+class Node:
+    def __init__(self, value, next):
+        self.value = value
+        self.next = next
+
+# Instantiate a linked list 5 -> 2 -> 1 -> 3 -> 8
+five = Node(5, None)
+two = Node(2, None)
+one = Node(1, None)
+three = Node(3, None)
+eight = Node(8, None)
+
+five.next = two # <--- head of the link list
+two.next = one
+one.next = three
+three.next = eight
+eight.next = None
+
+head = five
+```
+
+Traverse a linked-list
+```Python
+pointer = head
+while pointer is not None:
+    print(pointer.value)
+    pointer = pointer.next
+```
+
 ## 2.4 Leetcode.com
 We'll use leetcode.com for exercises and homeworks. Try to get your submissions pass all the test cases, which indicate your algorithms are fast!
