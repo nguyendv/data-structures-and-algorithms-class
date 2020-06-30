@@ -52,6 +52,14 @@ There are 2 types of data types:
 - Primitive data types: types are built-in, provided by language creators
 - Abstract data types: types are constructed from built-ins, usually from language users
 
+*The difference between data type and data structure?*
+- Data structures represent structures of a real world data. It's language-independent.
+- Data types are language-dependent. A data type is a construct for its variables:
+    - What values the variables can take
+    - What operations can be operated on the variables.
+
+Data structures are used to implement complex, or non primitive, data types.
+
 ### Built data types
 ```Python
 number = 1
@@ -96,7 +104,7 @@ class Laptop:
         """ `self` is a special variable arguments of every methods. It holds the current object
         Every method should start with `self`, unless you want a static method"""
         print(self.color)
-        
+
 apple = Laptop("Apple", "silver", 1000, 123455667)
 xiao_mi = Laptop("Xiao Mi", "silver", 1000, 33434325325)
 
@@ -144,4 +152,44 @@ def binary_search(numbers, 100):
     # to generate a large list of numbers for testing: numbers = list(range(100000))
 ```
 
-3. TBD
+# Chapter 2
+## 2.1 Introduction to Random Access Memory (RAM)
+Data need to be loaded into RAM before the CPU can fetch it. CPU instructions then store output data back to RAM.
+
+RAM consists of a number of *cells* (or locations), each can store a piece of information.
+
+Each cell has a number, called *address*, by which programs can refer to it.
+
+If a memory has `n` cells, the addresses range from `0` to `n-1`.
+
+All cells have contain the same number of bits. That means all cells have the same size.
+
+If a cell consists of `k` bits, there will be possibly `2^k` number of addresses.
+
+Data in a RAM cell can be accessed instantly by referring to its address.
+
+![Ram cell](images/memory-cell.png)
+
+## 2.2 Array
+Array is one data structure to represent the list data type.
+
+In an array, elements are stored next to each other in RAM. The benefits is accessing an element is instantly. The downsize is inserting/deleting an element requires shifting other elements, which is expensive in the worst case.
+
+Array elements have the same size.
+
+If RAM has 8-bit cells, or 1-byte, and an array's element size is also 1-byte, each element fits nicely inside 1 RAM cell.
+
+If the array's element size is less than 1-byte, can we fit more than 1 elements to a cell? The answer is no. Each element still takes on cell. Cell is the atomic storage unit. We can divide it further.
+
+If the array's element is 2-bytes, each element will take 2 cells.
+
+## 2.3 Linked List
+Linked list is another data structure to represent the list data type.
+A linked list consists a list of nodes where they are linked to each other:
+- Each node contains a value section to store the actual data, and a NEXT pointer
+- The NEXT pointer of each node points to the next node in the linked list.
+
+![Linked-list](images/linked-list.png)
+
+## 2.4 Leetcode.com
+We'll use leetcode.com for exercises and homeworks. Try to get your submissions pass all the test cases, which indicate your algorithms are fast!
