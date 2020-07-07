@@ -224,3 +224,22 @@ while pointer is not None:
 
 ## 2.4 Leetcode.com
 We'll use leetcode.com for exercises and homeworks. Try to get your submissions pass all the test cases, which indicate your algorithms are fast!
+
+# Chapter 3. Algorithm Analysis
+Slide: http://localhost:1313/docs/algorithm-analysis-intro/
+## Home work
+Deadline: By non on Wednesday July 08, 2020.
+How to submit: By email
+
+1. Finish previous homeworks if you haven't:
+- https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+- https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+- https://leetcode.com/problems/merge-two-sorted-lists/
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+- https://leetcode.com/problems/count-number-of-teams/
+
+2. For your algorithms of 5 problems above, analyze time complexity and space complexity
+
+3. Code 2 following problems and analyze time/space complexity
+- https://leetcode.com/problems/palindrome-linked-list/
+- https://leetcode.com/problems/odd-even-linked-list/
